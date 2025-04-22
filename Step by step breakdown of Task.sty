@@ -1,0 +1,79 @@
+Step by step breakdown of Task
+PHASE 1: Setup & Dataset Prep
+Choose Your Dataset
+
+Use Kaggle's Mobile Price Dataset or something similar with specs like RAM, battery, brand, etc.
+
+Clean & Prepare Data
+
+Handle missing values, encode categories, normalize if needed.
+
+Add a few custom fields if necessary (like price_range or brand).
+
+📊 PHASE 2: Dashboard Layout (Streamlit UI)
+Create the Base Dashboard
+
+streamlit_app.py setup
+
+Title + sidebar navigation
+
+Upload option for custom dataset (optional)
+
+Add Interactive Filters
+
+RAM (slider or dropdown)
+
+Price range (slider)
+
+Brand (multiselect)
+
+Optional: Features like battery/camera as filters
+
+Display Filtered Phones
+
+Show results in table or card format
+
+Add sorting (by battery, price, etc.)
+
+🤖 PHASE 3: Machine Learning Integration
+Train ML Models
+
+Use Random Forest / Linear Regression to predict price or price range
+
+Split data, train model, save with joblib or pickle
+
+User Input for Prediction
+
+Form for custom specs (RAM, battery, etc.)
+
+Show predicted price / price range
+
+🎨 PHASE 4: Visualization & UX
+Add Visual Insights
+
+Feature importance graph
+
+Correlation heatmap
+
+Distribution of phones by price/brand
+
+Polish the UI
+
+Add animations (optional)
+
+Add sections/tabs for better layout
+
+Use icons, logos (maybe of brands?)
+
+🧠 PHASE 5: Bonus & Creativity
+Recommendation Engine (Optional Bonus)
+
+Based on budget & preferred specs, suggest “Top Picks”
+
+Comparison Tool (Optional)
+
+Let users select 2 phones and compare specs side-by-side
+
+Export/Download Option
+
+Save filtered list as CSV
