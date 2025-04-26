@@ -25,5 +25,13 @@ print(df)
 print(df['Brand'])
 df=clean_data(df)
 st.title("Phone Dash")
+st.write("### Data Preview")
+st.dataframe(df.head())             # Show first rows
+st.write(df.info())                 # Print info to console or use st.write
+st.write(df.describe())             # Summary statistics
+st.sidebar.header("Filter Options") 
+brand_list = sorted(df['Brand'].unique())
+selected_brand = st.sidebar.selectbox("Choose Brand:", ["All"] + brand_list)
+
 
 
